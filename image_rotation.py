@@ -65,7 +65,7 @@ if __name__ == '__main__':
             cv.imshow('Image Rotation', img_rotate)
 
             # Process the key event
-            key = cv.waitKey(10)
+            key = cv.waitKey()
             if key == 27: # ESC
                 break
             elif key == ord('+') or key == ord('='):

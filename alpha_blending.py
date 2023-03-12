@@ -20,7 +20,7 @@ if img1 is not None and img2 is not None:
         cv.imshow('Image Blending: Image1 | Image2 | Blended', merge)
 
         # Process the key event
-        key = cv.waitKey(10)
+        key = cv.waitKey()
         if key == 27: # ESC
             break
         elif key == ord('+') or key == ord('='):

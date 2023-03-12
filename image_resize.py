@@ -39,7 +39,7 @@ if __name__ == '__main__':
             cv.imshow('Image Resize', img_resize)
 
             # Process the key event
-            key = cv.waitKey(10)
+            key = cv.waitKey()
             if key == 27: # ESC
                 break
             elif key == ord('+') or key == ord('='):

@@ -1,5 +1,5 @@
-import cv2 as cv
 import numpy as np
+import cv2 as cv
 
 # Read the given image as gray scale
 img = cv.imread('data/mandril_color.tif', cv.IMREAD_GRAYSCALE)
@@ -26,7 +26,7 @@ if img is not None:
         cv.imshow('Image Intensity Control: Original | Contrast/Brightness', merge)
 
         # Process the key event
-        key = cv.waitKey(10)
+        key = cv.waitKey()
         if key == 27: # ESC
             break
         elif key == ord('+') or key == ord('='):
