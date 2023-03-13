@@ -44,33 +44,31 @@ def rotate_forward(img, degree):
 
 
 if __name__ == '__main__':
-    img_file = 'data/peppers_color.tif'
-
     # Read the given image file
-    img = cv.imread(img_file)
+    img = cv.imread('data/peppers.tif')
+    assert img is not None, 'Cannot read the given image.'
 
-    # Check whether the image is valid or not
-    if img is not None:
-        degree = 0
+    # Initialize a control parameter
+    degree = 0
 
-        while True:
-            # Rotate the given image
-            # Note) Please try 'rotate_forward()' and observe missing pixels
-            img_rotate = rotate(img, degree) # Alternative) cv.rotate() only for 90, 180, and 270
-                                             #              cv.warpAffine for more general cases
-            # Show the rotated image
-            info = f'{degree} [deg]'
-            cv.putText(img_rotate, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
-            cv.putText(img_rotate, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
-            cv.imshow('Image Rotation', img_rotate)
+    while True:
+        # Rotate the given image
+        # Note) Please try 'rotate_forward()' and observe missing pixels
+        img_rotate = rotate(img, degree) # Alternative) cv.rotate() only for 90, 180, and 270
+                                         #              cv.warpAffine for more general cases
+        # Show the rotated image
+        info = f'{degree} [deg]'
+        cv.putText(img_rotate, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
+        cv.putText(img_rotate, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
+        cv.imshow('Image Rotation', img_rotate)
 
-            # Process the key event
-            key = cv.waitKey()
-            if key == 27: # ESC
-                break
-            elif key == ord('+') or key == ord('='):
-                degree = min(degree + 10, 180)
-            elif key == ord('-') or key == ord('_'):
-                degree = max(degree - 10, -180)
+        # Process the key event
+        key = cv.waitKey()
+        if key == 27: # ESC
+            break
+        elif key == ord('+') or key == ord('='):
+            degree = min(degree + 10, 180)
+        elif key == ord('-') or key == ord('_'):
+            degree = max(degree - 10, -180)
 
-        cv.destroyAllWindows()
+    cv.destroyAllWindows()

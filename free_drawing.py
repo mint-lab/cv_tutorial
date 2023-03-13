@@ -21,7 +21,7 @@ def free_drawing(canvas_width=640, canvas_height=480, init_brush_radius=3):
     brush_color = 0
     brush_radius = init_brush_radius
 
-    # Instantiate a window and register the mouse callback function
+    # Instantiate a window and assign its callback function for mouse events
     cv.namedWindow('Free Drawing')
     cv.setMouseCallback('Free Drawing', mouse_event_handler, mouse_state)
 

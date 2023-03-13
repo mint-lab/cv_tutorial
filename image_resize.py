@@ -19,32 +19,32 @@ def resize(img, scale):
 
 
 if __name__ == '__main__':
-    img_file = 'data/peppers_color.tif'
+    img_file = 'data/peppers.tif'
 
     # Read the given image file
     img = cv.imread(img_file)
+    assert img is not None, 'Cannot read the given image, ' + img_file + '.'
 
-    # Check whether the image is valid or not
-    if img is not None:
-        scale = 1
+    # Initialize a control parameter
+    scale = 1
 
-        while True:
-            # Resize the given image
-            img_resize = resize(img, scale) # Alternative) cv.resize()
+    while True:
+        # Resize the given image
+        img_resize = resize(img, scale) # Alternative) cv.resize()
 
-            # Show the resized image
-            info = f'x{scale:.1f}'
-            cv.putText(img_resize, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
-            cv.putText(img_resize, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
-            cv.imshow('Image Resize', img_resize)
+        # Show the resized image
+        info = f'x{scale:.1f}'
+        cv.putText(img_resize, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
+        cv.putText(img_resize, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
+        cv.imshow('Image Resize', img_resize)
 
-            # Process the key event
-            key = cv.waitKey()
-            if key == 27: # ESC
-                break
-            elif key == ord('+') or key == ord('='):
-                scale = min(scale + 0.1, 3)
-            elif key == ord('-') or key == ord('_'):
-                scale = max(scale - 0.1, 0.3)
+        # Process the key event
+        key = cv.waitKey()
+        if key == 27: # ESC
+            break
+        elif key == ord('+') or key == ord('='):
+            scale = min(scale + 0.1, 3)
+        elif key == ord('-') or key == ord('_'):
+            scale = max(scale - 0.1, 0.3)
 
-        cv.destroyAllWindows()
+    cv.destroyAllWindows()

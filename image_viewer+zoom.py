@@ -47,6 +47,7 @@ def image_viewer(img_file, zoom_level=10, zoom_box_radius=5, zoom_box_margin=10)
 
 
 if __name__ == '__main__':
-    img_file = 'data/peppers_color.tif'
+    img_file = 'data/peppers.tif'
+
     if not image_viewer(img_file):
         print(f'Cannot open the given file, {img_file}.')
