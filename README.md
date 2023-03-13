@@ -4,7 +4,7 @@ _Computer Vision Tutorial_ includes classical theories and techniques and also r
 
 This tutorial contains code examples briefly written in [Python](https://python.org/) with [OpenCV](https://opencv.org/) and [PyTorch](https://pytorch.org/).
 * :bulb: Some of codes will help readers to understand inside of algorithms (e.g. how it works).
-* :wrench: The others of codes also provide usages and applications of algorithms (e.g. how to use it).
+* :wrench: The others of codes will provide usages and applications of OpenCV functions (e.g. how to use it).
 
 
 
@@ -25,7 +25,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * (Handling mouse events) Free drawing: [free_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/free_drawing.py) :wrench:
    * Image Editing
      * Negative image and flip: [negative_image_and_flip.py](https://github.com/mint-lab/cv_tutorial/blob/master/negative_image_and_flip.py) :bulb:
-     * Intensity control with contrast and brightness: [intensity_control.py](https://github.com/mint-lab/cv_tutorial/blob/master/intensity_control.py) :bulb:
+     * Intensity transformation with contrast and brightness: [intensity_transformation.py](https://github.com/mint-lab/cv_tutorial/blob/master/intensity_transformation.py) :bulb:
      * (Image addition) Alpha blending: [alpha_blending.py](https://github.com/mint-lab/cv_tutorial/blob/master/alpha_blending.py) :bulb:
      * (Image subtraction) Image difference: [image_difference.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_difference.py) :bulb:
      * (Image crop) Image file viewer with the zoom window: [image_viewer+zoom.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_viewer%2Bzoom.py) :bulb:

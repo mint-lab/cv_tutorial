@@ -23,7 +23,7 @@ while True:
     cv.putText(img_tran, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
     cv.putText(img_tran, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
     merge = np.hstack((img, img_tran))
-    cv.imshow('Image Intensity Control: Original | Contrast/Brightness', merge)
+    cv.imshow('Intensity Transformation: Original | Contrast/Brightness', merge)
 
     # Process the key event
     key = cv.waitKey()
