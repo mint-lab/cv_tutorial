@@ -15,8 +15,8 @@ while True:
     # Apply contrast and brightness
     img_tran = contrast * img + brightness # Alternative) cv.equalizeHist(), cv.intensity_transform
     img_tran[img_tran < 0] = 0
-    img_tran[img_tran > 255] = 255         # Saturate values
-    img_tran = img_tran.astype(np.uint8)
+    img_tran[img_tran > 255] = 255
+    img_tran = img_tran.astype(np.uint8)   # Alternative) cv.convertScaleAbs() for the above 3 lines
 
     # Show all images
     info = f'Contrast: {contrast:.1f}, Brightness: {brightness:.0f}'
