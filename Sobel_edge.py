@@ -27,18 +27,18 @@ if __name__ == '__main__':
         assert img is not None, 'Cannot read the given image, ' + img_list[img_select]
 
         # Extract edges using two-directional Sobel responses
-        # Normalize their values within [0, 1] (Note: 1020 derived from 255 * (1+2+1))
-        sobx = cv.Sobel(img, cv.CV_64F, 1, 0) / 1020       # Sobel's x-directional change
-        soby = cv.Sobel(img, cv.CV_64F, 0, 1) / 1020       # Sobel's y-directional change
-        magn = np.sqrt(sobx*sobx + soby*soby) / np.sqrt(2) # Sobel's magnitude
-        orie = np.arctan2(soby, sobx)                      # Sobel's orientation
+        #  and normalize their values within [0, 1] (Note: 1020 derived from 255 * (1+2+1))
+        sobx = cv.Sobel(img, cv.CV_64F, 1, 0) / 1020       # Sobel x-directional response
+        soby = cv.Sobel(img, cv.CV_64F, 0, 1) / 1020       # Sobel y-directional response
+        magn = np.sqrt(sobx*sobx + soby*soby) / np.sqrt(2) # Sobel magnitude
+        orie = np.arctan2(soby, sobx)                      # Sobel orientation
         edge = magn > edge_threshold # Alternative) cv.threshold(), cv.adaptiveThreshold()
 
         # Prepare the orientation image as the BGR color
         orie[orie < 0] = orie[orie < 0] + 2*np.pi      # Convert [-np.pi, np.pi) to [0, 2*np.pi)
-        orie_hsv = np.dstack((orie / (2*np.pi) * 180,  # Hue channel
-                              np.full_like(orie, 255), # Satuation channel
-                              magn * 255))             # Value channel
+        orie_hsv = np.dstack((orie / (2*np.pi) * 180,  # HSV color - Hue channel
+                              np.full_like(orie, 255), # HSV color - Satuation channel
+                              magn * 255))             # HSV color - Value channel
         orie_bgr = cv.cvtColor(orie_hsv.astype(np.uint8), cv.COLOR_HSV2BGR)
 
         # Prepare the original, Sobel X/Y, magnitude, and edge images as the BGR color

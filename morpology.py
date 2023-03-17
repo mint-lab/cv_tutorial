@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-# Define ...
+# Define morphological operations and kernels
 morph_operations = [
     {'name': 'Erode',     'operation': cv.MORPH_ERODE},  # Alternative) cv.erode()
     {'name': 'Dilate',    'operation': cv.MORPH_DILATE}, # Alternative) cv.dilate()

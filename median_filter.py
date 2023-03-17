@@ -20,14 +20,14 @@ while True:
     assert img is not None, 'Cannot read the given image, ' + img_list[img_select]
 
     # Apply the median filter
-    img_filt = cv.medianBlur(img, kernel_size)
+    result = cv.medianBlur(img, kernel_size)
 
     # Show all images
     info = f'KernelSize: {kernel_size}'
-    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
-    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
-    merge = np.hstack((img, img_filt))
-    cv.imshow('Medial Filter: Original | Filtered', merge)
+    cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
+    cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
+    merge = np.hstack((img, result))
+    cv.imshow('Medial Filter: Original | Result', merge)
 
     # Process the key event
     key = cv.waitKey()

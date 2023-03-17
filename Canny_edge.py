@@ -29,7 +29,7 @@ while True:
     cv.putText(edge, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
     cv.putText(edge, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
     merge = np.hstack((img, edge))
-    cv.imshow('Canny Edge: Original | Canny', merge)
+    cv.imshow('Canny Edge: Original | Result', merge)
 
     # Process the key event
     key = cv.waitKey()

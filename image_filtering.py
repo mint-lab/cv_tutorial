@@ -77,15 +77,15 @@ while True:
 
     # Apply convolution to the image with the given 'kernel'
     name, kernel = kernel_table[kernel_select].values() # Make (short) alias
-    # img_filt = cv.filter2D(img, -1, kernel)           # Note) dtype: np.uint8 (range: [0, 255]; Be careful!)
-    img_filt = cv.filter2D(img, cv.CV_64F, kernel)      # Note) dtype: np.float64
-    img_filt = cv.convertScaleAbs(img_filt)             # Convert 'np.float64' to 'np.uint8' with saturation
+    # result = cv.filter2D(img, -1, kernel)             # Note) dtype: np.uint8 (range: [0, 255]; Be careful!)
+    result = cv.filter2D(img, cv.CV_64F, kernel)        # Note) dtype: np.float64
+    result = cv.convertScaleAbs(result)               # Convert 'np.float64' to 'np.uint8' with saturation
 
     # Show the image and its filtered result
-    cv.putText(img_filt, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
-    cv.putText(img_filt, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
-    merge = np.hstack((img, img_filt))
-    cv.imshow('Image Filtering (Original | Filtered)', merge)
+    cv.putText(result, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
+    cv.putText(result, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
+    merge = np.hstack((img, result))
+    cv.imshow('Image Filtering: Original | Filtered', merge)
 
     # Process the key event
     key = cv.waitKey()

@@ -22,17 +22,17 @@ while True:
     img = cv.imread(img_list[img_select])
     assert img is not None, 'Cannot read the given image, ' + img_list[img_select]
 
-    # Apply the bilateral filter several times
-    img_filt = img.copy()
+    # Apply the bilateral filter iteratively
+    result = img.copy()
     for itr in range(n_iterations):
-        img_filt = cv.bilateralFilter(img_filt, kernel_size, sigma_color, sigma_space)
+        result = cv.bilateralFilter(result, kernel_size, sigma_color, sigma_space)
 
     # Show all images
     info = f'KSize: {kernel_size}, SColor: {sigma_color}, SSpace: {sigma_space:.1f}, NIter: {n_iterations}'
-    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
-    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
-    merge = np.hstack((img, img_filt))
-    cv.imshow('Bilateral Filter: Original | Filtered', merge)
+    cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
+    cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
+    merge = np.hstack((img, result))
+    cv.imshow('Bilateral Filter: Original | Result', merge)
 
     # Process the key event
     key = cv.waitKey()
