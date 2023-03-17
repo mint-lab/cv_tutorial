@@ -8,12 +8,14 @@ def drawText(img, text, org=(10, 25), fontFace=cv.FONT_HERSHEY_DUPLEX, fontScale
 
 
 if __name__ == '__main__':
-    img_list = ['data/lena.tif',
-                'data/baboon.tif',
-                'data/peppers.tif',
-                'data/black_circle.png',
-                'data/salt_and_pepper.png',
-                'data/sudoku.png']
+    img_list = [
+        'data/lena.tif',
+        'data/baboon.tif',
+        'data/peppers.tif',
+        'data/black_circle.png',
+        'data/salt_and_pepper.png',
+        'data/sudoku.png',
+    ]
 
     # Initialize control parameters
     edge_threshold = 0.1

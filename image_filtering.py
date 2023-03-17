@@ -57,12 +57,14 @@ kernel_table = [
                                                     [ 0,  1,  2]])},
 ]
 
-img_list = ['data/lena.tif',
-            'data/baboon.tif',
-            'data/peppers.tif',
-            'data/black_circle.png',
-            'data/salt_and_pepper.png',
-            'data/sudoku.png']
+img_list = [
+    'data/lena.tif',
+    'data/baboon.tif',
+    'data/peppers.tif',
+    'data/black_circle.png',
+    'data/salt_and_pepper.png',
+    'data/sudoku.png',
+]
 
 # Initialize a control parameter
 kernel_select = 0
@@ -74,10 +76,10 @@ while True:
     assert img is not None, 'Cannot read the given image, ' + img_list[img_select]
 
     # Apply convolution to the image with the given 'kernel'
-    kernel, name = kernel_table[kernel_select]['kernel'], kernel_table[kernel_select]['name'] # Make alias
-    # img_filt = cv.filter2D(img, -1, kernel)      # Note) dtype: np.uint8 (range: [0, 255]; Be careful!)
-    img_filt = cv.filter2D(img, cv.CV_64F, kernel) # Note) dtype: np.float64
-    img_filt = cv.convertScaleAbs(img_filt)        # Convert 'np.float64' to 'np.uint8' with saturation
+    name, kernel = kernel_table[kernel_select].values() # Make (short) alias
+    # img_filt = cv.filter2D(img, -1, kernel)           # Note) dtype: np.uint8 (range: [0, 255]; Be careful!)
+    img_filt = cv.filter2D(img, cv.CV_64F, kernel)      # Note) dtype: np.float64
+    img_filt = cv.convertScaleAbs(img_filt)             # Convert 'np.float64' to 'np.uint8' with saturation
 
     # Show the image and its filtered result
     cv.putText(img_filt, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)
