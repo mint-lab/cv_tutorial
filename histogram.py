@@ -22,7 +22,7 @@ def conv_hist2img(hist):
 if __name__ == '__main__':
     # Read the given image as gray scale
     img = cv.imread('data/baboon.tif', cv.IMREAD_GRAYSCALE)
-    assert img is not None, 'Cannot read the given image.'
+    assert img is not None, 'Cannot read the given image'
 
     # Get its histogram
     hist = get_histogram(img)

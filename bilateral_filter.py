@@ -1,0 +1,58 @@
+import cv2 as cv
+import numpy as np
+
+img_list = ['data/lena.tif',
+            'data/baboon.tif',
+            'data/peppers.tif',
+            'data/black_circle.png',
+            'data/salt_and_pepper.png',
+            'data/sudoku.png']
+
+# Initialize control parameters
+kernel_size = 9
+sigma_color = 150
+sigma_space = 2
+n_iteration = 1
+img_select = 0
+
+while True:
+    # Read the given image
+    img = cv.imread(img_list[img_select])
+    assert img is not None, 'Cannot read the given image, ' + img_list[img_select]
+
+    # Apply the bilateral filter several times
+    img_filt = img.copy()
+    for itr in range(n_iteration):
+        img_filt = cv.bilateralFilter(img_filt, kernel_size, sigma_color, sigma_space)
+
+    # Show all images
+    info = f'KSize: {kernel_size}, SColor: {sigma_color}, SSpace: {sigma_space:.1f}, NIter: {n_iteration}'
+    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
+    cv.putText(img_filt, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
+    merge = np.hstack((img, img_filt))
+    cv.imshow('Bilateral Filter: Original | Filtered', merge)
+
+    # Process the key event
+    key = cv.waitKey()
+    if key == 27: # ESC
+        break
+    elif key == ord('+') or key == ord('='):
+        kernel_size = kernel_size + 2
+    elif key == ord('-') or key == ord('_'):
+        kernel_size = max(kernel_size - 2, 3)
+    elif key == ord(']') or key == ord('}'):
+        sigma_color += 2
+    elif key == ord('[') or key == ord('{'):
+        sigma_color -= 2
+    elif key == ord('>') or key == ord('.'):
+        sigma_space += 0.1
+    elif key == ord('<') or key == ord(','):
+        sigma_space -= 0.1
+    elif key == ord(')') or key == ord('0'):
+        n_iteration += 1
+    elif key == ord('(') or key == ord('9'):
+        n_iteration = max(n_iteration - 1, 1)
+    elif key == ord('\t'):
+        img_select = (img_select + 1) % len(img_list)
+
+cv.destroyAllWindows()
