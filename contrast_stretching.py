@@ -13,7 +13,7 @@ while True:
     # Apply contrast and brightness
     # Alternative) cv.intensity_transform.contrastStretching() (with s1=0 and s2=255)
     img_tran = 255 / (value_range[1] - value_range[0]) * (img.astype(np.int32) - value_range[0])
-    img_tran = cv.convertScaleAbs(img_tran) # Apply saturation
+    img_tran = img_tran.astype(np.uint8) # Apply saturation
 
     # Get image histograms
     hist = conv_hist2img(get_histogram(img))

@@ -12,7 +12,7 @@ img_list = [
 
 # Initialize control parameters
 kernel_size = 5
-img_select = -1
+img_select = 4
 
 while True:
     # Read the given image

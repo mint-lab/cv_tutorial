@@ -19,7 +19,7 @@ while True:
     if frame_count % 100 == 0:
         print(f'Progress: {frame_count}/{frame_total}')
 
-    # Apply the image to the averaged image (the background image)
+    # Add the image to the averaged image (the background image)
     # Alternative) cv.createBackgroundSubtractorMOG2(), cv::bgsegm
     if img_back is None:
         img_back = np.zeros_like(img, dtype=np.float64)

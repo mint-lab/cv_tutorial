@@ -66,7 +66,7 @@ img_list = [
     'data/sudoku.png',
 ]
 
-# Initialize a control parameter
+# Initialize control parameters
 kernel_select = 0
 img_select = 0
 
@@ -79,7 +79,7 @@ while True:
     name, kernel = kernel_table[kernel_select].values() # Make (short) alias
     # result = cv.filter2D(img, -1, kernel)             # Note) dtype: np.uint8 (range: [0, 255]; Be careful!)
     result = cv.filter2D(img, cv.CV_64F, kernel)        # Note) dtype: np.float64
-    result = cv.convertScaleAbs(result)               # Convert 'np.float64' to 'np.uint8' with saturation
+    result = cv.convertScaleAbs(result)                 # Convert 'np.float64' to 'np.uint8' with saturation
 
     # Show the image and its filtered result
     cv.putText(result, name, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (255, 255, 255), thickness=2)

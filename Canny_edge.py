@@ -14,7 +14,7 @@ img_list = [
 threshold1 = 500
 threshold2 = 1200
 aperture_size = 5
-img_select = 0
+img_select = -1
 
 while True:
     # Read the given image

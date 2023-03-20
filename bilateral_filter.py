@@ -13,7 +13,7 @@ img_list = [
 # Initialize control parameters
 kernel_size = 9
 sigma_color = 150
-sigma_space = 2
+sigma_space = 2.4
 n_iterations = 1
 img_select = 0
 
@@ -41,7 +41,7 @@ while True:
     elif key == ord('+') or key == ord('='):
         kernel_size = kernel_size + 2
     elif key == ord('-') or key == ord('_'):
-        kernel_size = max(kernel_size - 2, 3)
+        kernel_size = max(kernel_size - 2, -1)
     elif key == ord(']') or key == ord('}'):
         sigma_color += 2
     elif key == ord('[') or key == ord('{'):

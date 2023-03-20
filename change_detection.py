@@ -43,7 +43,7 @@ while True:
     img_mask = cv.erode(img_mask, box(3), iterations=2) # Restore the thick mask thin
 
     # Update the background
-    # Alternative) cv.createBackgroundSubtractorMOG2(), cv::bgsegm
+    # Alternative) cv.createBackgroundSubtractorMOG2(), cv.bgsegm
     bg = ~fg
     img_back[bg] = (bg_update_rate * img_blur[bg] + (1 - bg_update_rate) * img_back[bg]) # With the higher weight
     img_back[fg] = (fg_update_rate * img_blur[fg] + (1 - fg_update_rate) * img_back[fg]) # With the lower weight

@@ -28,35 +28,35 @@ if __name__ == '__main__':
 
         # Extract edges using two-directional Sobel responses
         #  and normalize their values within [0, 1] (Note: 1020 derived from 255 * (1+2+1))
-        sobx = cv.Sobel(img, cv.CV_64F, 1, 0) / 1020       # Sobel x-directional response
-        soby = cv.Sobel(img, cv.CV_64F, 0, 1) / 1020       # Sobel y-directional response
-        magn = np.sqrt(sobx*sobx + soby*soby) / np.sqrt(2) # Sobel magnitude
-        orie = np.arctan2(soby, sobx)                      # Sobel orientation
-        edge = magn > edge_threshold # Alternative) cv.threshold(), cv.adaptiveThreshold()
+        dx   = cv.Sobel(img, cv.CV_64F, 1, 0) / 1020 # Sobel x-directional response
+        dy   = cv.Sobel(img, cv.CV_64F, 0, 1) / 1020 # Sobel y-directional response
+        mag  = np.sqrt(dx*dx + dy*dy) / np.sqrt(2)   # Sobel magnitude
+        ori  = np.arctan2(dy, dx)                    # Sobel orientation
+        edge = mag > edge_threshold # Alternative) cv.threshold(), cv.adaptiveThreshold()
 
         # Prepare the orientation image as the BGR color
-        orie[orie < 0] = orie[orie < 0] + 2*np.pi      # Convert [-np.pi, np.pi) to [0, 2*np.pi)
-        orie_hsv = np.dstack((orie / (2*np.pi) * 180,  # HSV color - Hue channel
-                              np.full_like(orie, 255), # HSV color - Satuation channel
-                              magn * 255))             # HSV color - Value channel
-        orie_bgr = cv.cvtColor(orie_hsv.astype(np.uint8), cv.COLOR_HSV2BGR)
+        ori[ori < 0] = ori[ori < 0] + 2*np.pi        # Convert [-np.pi, np.pi) to [0, 2*np.pi)
+        ori_hsv = np.dstack((ori / (2*np.pi) * 180,  # HSV color - Hue channel
+                             np.full_like(ori, 255), # HSV color - Saturation channel
+                             mag * 255))             # HSV color - Value channel
+        ori_bgr = cv.cvtColor(ori_hsv.astype(np.uint8), cv.COLOR_HSV2BGR)
 
         # Prepare the original, Sobel X/Y, magnitude, and edge images as the BGR color
-        oimg_bgr = cv.cvtColor(img, cv.COLOR_GRAY2BGR)
-        sobx_bgr = cv.cvtColor(abs(sobx * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
-        soby_bgr = cv.cvtColor(abs(soby * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
-        magn_bgr = cv.cvtColor((magn * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
-        edge_bgr = cv.cvtColor((edge * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
+        img_bgr  = cv.cvtColor(img, cv.COLOR_GRAY2BGR)
+        dx_bgr   = cv.cvtColor(abs(dx * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
+        dy_bgr   = cv.cvtColor(abs(dy * 255).astype(np.uint8), cv.COLOR_GRAY2BGR)
+        mag_bgr  = cv.cvtColor((mag * 255).astype(np.uint8),   cv.COLOR_GRAY2BGR)
+        edge_bgr = cv.cvtColor((edge * 255).astype(np.uint8),  cv.COLOR_GRAY2BGR)
 
         # Show all images
-        drawText(oimg_bgr, 'Original')
-        drawText(sobx_bgr, 'SobelX')
-        drawText(soby_bgr, 'SobelY')
-        drawText(magn_bgr, 'Magnitude')
-        drawText(orie_bgr, 'Orientation')
+        drawText(img_bgr, 'Original')
+        drawText(dx_bgr,  'SobelX')
+        drawText(dy_bgr,  'SobelY')
+        drawText(mag_bgr, 'Magnitude')
+        drawText(ori_bgr, 'Orientation')
         drawText(edge_bgr, f'EdgeThreshold: {edge_threshold:.2f}')
-        merge = np.vstack((np.hstack((oimg_bgr, sobx_bgr, soby_bgr)),
-                           np.hstack((edge_bgr, magn_bgr, orie_bgr))))
+        merge = np.vstack((np.hstack((img_bgr, dx_bgr, dy_bgr)),
+                           np.hstack((edge_bgr, mag_bgr, ori_bgr))))
         cv.imshow('Sobel Edge', merge)
         key = cv.waitKey()
         if key == 27: # ESC
