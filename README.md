@@ -2,6 +2,8 @@
 
 _Computer Vision Tutorial_ includes classical theories and techniques and also recent ML/DL-based methods for computer vision. As classical theories and techniques, the tutorial contains image processing, camera projection models, camera calibration, and pose estimation. As recent ML/DL-based methods, the tutorial deals with object categorization (and backbone networks), and its extensions such as object detection and instance segmentation. It also explains about further topics such as multi-object tracking, structure-from-motion, NeRF, and so on.
 
+This tutorial has been initiated and maintained to teach undergraduate CSE students in [SEOULTECH](https://en.seoultech.ac.kr/) as the course of _Computer Vision_ (109079).
+
 This tutorial contains code examples briefly written in [Python](https://python.org/) with [OpenCV](https://opencv.org/) and [PyTorch](https://pytorch.org/).
 * :bulb: Some of codes will help readers to understand inside of algorithms (e.g. how it works).
 * :wrench: The others of codes will provide usages and applications of OpenCV functions (e.g. how to use it).
@@ -9,8 +11,8 @@ This tutorial contains code examples briefly written in [Python](https://python.
 
 
 ### Code Examples
-1. **Introduction** (Slides)
-2. **Image Editing: Learning OpenCV** (Slides)
+1. **Introduction** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
+2. **Image Editing: Learning OpenCV** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
    * OpenCV Image Representation
       * Image creation: [image_creation.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_creation.py) :bulb:
    * OpenCV Image and Video Input/Output
@@ -18,6 +20,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * Image format converter: [image_converter.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_converter.py) :wrench:
       * Video file player: [video_player.py](https://github.com/mint-lab/cv_tutorial/blob/master/video_player.py) :wrench:
       * Video format converter: [video_converter.py](https://github.com/mint-lab/cv_tutorial/blob/master/video_converter.py) :wrench:
+      * Camera recorder
    * OpenCV Drawing Functions
       * Shape drawing: [shape_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/shape_drawing.py) :wrench:
    * OpenCV High-level GUI
@@ -29,10 +32,11 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * (Image addition) Alpha blending: [alpha_blending.py](https://github.com/mint-lab/cv_tutorial/blob/master/alpha_blending.py) :bulb:
       * (Image addition) Background extraction: [background_extraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/background_extraction.py) :bulb:
       * (Image subtraction) Image difference: [image_difference.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_difference.py) :bulb:
+      * (Image subtraction) Background subtraction
       * (Image crop) Image file viewer with the zoom window: [image_viewer+zoom.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_viewer%2Bzoom.py) :bulb:
       * Image resize with backward value copy: [image_resize.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_resize.py) :bulb:
       * Image rotation with backward/forward value copy: [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_rotation.py) :bulb:
-
+   
 3. **Image Processing** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
    * Intensity Transformation
      * Image histogram: [histogram.py](https://github.com/mint-lab/cv_tutorial/blob/master/histogram.py) :bulb:
@@ -69,8 +73,6 @@ This tutorial contains code examples briefly written in [Python](https://python.
 
 
 ### Acknowledgements
-:information_source: This tutorial has been initiated and maintained to teach undergraduate students in [SEOULTECH](https://en.seoultech.ac.kr/) as the course of _Computer Vision_ (109079).
-
 The authors thank the following contributors and projects.
 
 * [ImageProcessingPlace.com](https://www.imageprocessingplace.com/root_files_V3/image_databases.htm) for test images (`lena.tif`, `baboon.tif`, and `peppers.tif`)
