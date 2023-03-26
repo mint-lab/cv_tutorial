@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
         cv.imshow('Object Localization and Measurement', img_copy)
         key = cv.waitKey(10)
-        if key == 27:
+        if key == 27: # ESC
             break
 
     cv.destroyAllWindows()
