@@ -4,7 +4,7 @@ from scipy.spatial.transform import Rotation
 
 # The given camera configuration: Focal length, principal point, image resolution, position, and orientation
 f, cx, cy, noise_std = 1000, 320, 240, 1
-img_res = [640, 480]
+img_res = (640, 480)
 cam_pos = [[0, 0, 0], [-2, -2, 0], [2, 2, 0], [-2, 2, 0], [2, -2, 0]]          # Unit: [m]
 cam_ori = [[0, 0, 0], [-15 , 15, 0], [15, -15, 0], [15, 15, 0], [-15, -15, 0]] # Unit: [deg]
 
