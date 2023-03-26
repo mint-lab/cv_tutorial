@@ -6,7 +6,7 @@ target_fourcc = 'XVID' # Note) FourCC: https://learn.microsoft.com/en-us/windows
 
 # Read the given video file
 video = cv.VideoCapture(video_file)
-assert video.isOpened(), 'Cannot read the given video, ' + video_file + '.'
+assert video.isOpened(), 'Cannot read the given video, ' + video_file
 
 target = cv.VideoWriter()
 while True:

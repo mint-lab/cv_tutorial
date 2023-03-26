@@ -3,7 +3,7 @@ import numpy as np
 
 # Read the given image
 img = cv.imread('data/peppers.tif')
-assert img is not None, 'Cannot read the given image.'
+assert img is not None, 'Cannot read the given image'
 
 # Get its negative image
 img_nega = 255 - img                         # Alternative) cv.bitwise_xor()

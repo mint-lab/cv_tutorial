@@ -4,12 +4,12 @@ import cv2 as cv
 def mouse_event_handler(event, x, y, flags, param):
     # Change 'mouse_state' (given as 'param') according to the mouse 'event'
     if event == cv.EVENT_LBUTTONDOWN:
-        param[0] = True
-        param[1] = (x, y)
+        param['dragged'] = True
+        param['xy'] = (x, y)
     elif event == cv.EVENT_LBUTTONUP:
-        param[0] = False
-    elif event == cv.EVENT_MOUSEMOVE and param[0]:
-        param[1] = (x, y)
+        param['dragged'] = False
+    elif event == cv.EVENT_MOUSEMOVE and param['dragged']:
+        param['xy'] = (x, y)
 
 def free_drawing(canvas_width=640, canvas_height=480, init_brush_radius=3):
     # Prepare a canvas and palette
@@ -17,7 +17,7 @@ def free_drawing(canvas_width=640, canvas_height=480, init_brush_radius=3):
     palette = [(0, 0, 0), (255, 255, 255), (0, 0, 255), (0, 255, 0), (255, 0, 0), (255, 255, 0), (255, 0, 255), (0, 255, 255)]
 
     # Initialize drawing states
-    mouse_state = [False, (-1, -1)] # Note) [mouse_left_button_click, mouse_xy]
+    mouse_state = {'dragged': False, 'xy': (-1, -1)}
     brush_color = 0
     brush_radius = init_brush_radius
 
@@ -27,9 +27,8 @@ def free_drawing(canvas_width=640, canvas_height=480, init_brush_radius=3):
 
     while True:
         # Draw a point if necessary
-        mouse_left_button_click, mouse_xy = mouse_state
-        if mouse_left_button_click:
-           cv.circle(canvas, mouse_xy, brush_radius, palette[brush_color], -1)
+        if mouse_state['dragged']:
+           cv.circle(canvas, mouse_state['xy'], brush_radius, palette[brush_color], -1)
 
         # Show the canvas
         canvas_copy = canvas.copy()

@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     # Read the given image file
     img = cv.imread(img_file)
-    assert img is not None, 'Cannot read the given image, ' + img_file + '.'
+    assert img is not None, 'Cannot read the given image, ' + img_file
 
     # Initialize a control parameter
     scale = 1

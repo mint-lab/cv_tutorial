@@ -4,7 +4,7 @@ video_file = 'data/PETS09-S2L1-raw.webm'
 
 # Read the given video file
 video = cv.VideoCapture(video_file)
-assert video.isOpened(), 'Cannot read the given video, ' + video_file + '.'
+assert video.isOpened(), 'Cannot read the given video, ' + video_file
 
 # Get FPS and calculate the waiting time in millisecond
 fps = video.get(cv.CAP_PROP_FPS)

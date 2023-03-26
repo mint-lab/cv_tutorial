@@ -50,4 +50,4 @@ if __name__ == '__main__':
     img_file = 'data/peppers.tif'
 
     if not image_viewer(img_file):
-        print(f'Cannot open the given file, {img_file}.')
+        print(f'Cannot open the given file, {img_file}')

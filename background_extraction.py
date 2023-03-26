@@ -3,7 +3,7 @@ import cv2 as cv
 
 # Read the given video
 video = cv.VideoCapture('data/PETS09-S2L1-raw.webm')
-assert video.isOpened(), 'Cannot read the given video.'
+assert video.isOpened(), 'Cannot read the given video'
 
 frame_total = int(video.get(cv.CAP_PROP_FRAME_COUNT))
 frame_count = 0

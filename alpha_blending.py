@@ -4,7 +4,7 @@ import numpy as np
 # Read the given images
 img1 = cv.imread('data/baboon.tif')
 img2 = cv.imread('data/peppers.tif')
-assert img1 is not None and img2 is not None, 'Cannot read the given images.'
+assert img1 is not None and img2 is not None, 'Cannot read the given images'
 
 # Initialize a control parameter
 alpha = 0.5

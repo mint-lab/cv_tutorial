@@ -3,7 +3,7 @@ import cv2 as cv
 
 # Read the given image as gray scale
 img = cv.imread('data/baboon.tif', cv.IMREAD_GRAYSCALE)
-assert img is not None, 'Cannot read the given image.'
+assert img is not None, 'Cannot read the given image'
 
 # Intialize control parameters
 contrast = 1.6
