@@ -30,7 +30,7 @@ for i, (pos, ori) in enumerate(zip(cam_pos, cam_ori)):
     # Show and store the points
     img = np.zeros(img_res[::-1], dtype=np.uint8)
     for c in range(x.shape[1]):
-        cv.circle(img, x[:,c].astype(np.int32), 2, 255, -1)
+        cv.circle(img, x[0:2,c].astype(np.int32), 2, 255, -1)
     cv.imshow(f'Image Formation {i}', img)
     np.savetxt(f'../data/image_formation{i}.xyz', x.T) # Size: N x 2
 

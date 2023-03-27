@@ -20,15 +20,10 @@ while True:
     for zero_pt, dist_pt in zip(zero_pts, dist_pts):
         cv.line(img_vector, np.int32(zero_pt.flatten()), np.int32(dist_pt.flatten()), (255, 0, 0))
     for pt in dist_pts:
-        cv.circle(img_vector, np.int32(pt.flatten()), 1, (0, 0, 255), -1)
+        cv.circle(img_vector, np.int32(pt.flatten()), 2, (0, 0, 255), -1)
 
     # Draw grids
     img_grid = np.full((img_h, img_w, 3), 255, dtype=np.uint8)
-    zero_pts = zero_pts.reshape(len(range(*grid_y)), -1, 2)
-    for pts in zero_pts:
-        cv.polylines(img_grid, [np.int32(pts)], False, (255, 0, 0))
-    for pts in zero_pts.swapaxes(0, 1):
-        cv.polylines(img_grid, [np.int32(pts)], False, (255, 0, 0))
     dist_pts = dist_pts.reshape(len(range(*grid_y)), -1, 2)
     for pts in dist_pts:
         cv.polylines(img_grid, [np.int32(pts)], False, (0, 0, 255))
