@@ -24,7 +24,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
    * OpenCV Drawing Functions
       * Shape drawing: [shape_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/shape_drawing.py) :wrench:
    * OpenCV High-level GUI
-      * (Handling keyboard events) Video file player with frame-based navigation: [video_player+navigation.py](https://github.com/mint-lab/cv_tutorial/blob/master/video_player%2Bnavigation.py) :wrench:
+      * (Handling keyboard events) Video file player with frame navigation: [video_player+navigation.py](https://github.com/mint-lab/cv_tutorial/blob/master/video_player%2Bnavigation.py) :wrench:
       * (Handling mouse events) Free drawing: [free_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/free_drawing.py) :wrench:
    * Image Editing
       * Negative image and flip: [negative_image_and_flip.py](https://github.com/mint-lab/cv_tutorial/blob/master/negative_image_and_flip.py) :bulb:
@@ -36,7 +36,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * (Image crop) Image file viewer with the zoom window: [image_viewer+zoom.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_viewer%2Bzoom.py) :bulb:
       * Image resize with backward value copy: [image_resize.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_resize.py) :bulb:
       * Image rotation with backward/forward value copy: [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_rotation.py) :bulb:
-   
+
 3. **Image Processing** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
    * Intensity Transformation
      * Image histogram: [histogram.py](https://github.com/mint-lab/cv_tutorial/blob/master/histogram.py) :bulb:
@@ -53,7 +53,16 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Morphological operations with various operations and kernels: [morpology.py](https://github.com/mint-lab/cv_tutorial/blob/master/morpology.py) :wrench:
      * Application) Change detection (foreground extraction): [change_detection.py](https://github.com/mint-lab/cv_tutorial/blob/master/change_detection.py) :wrench:
 
-4. **Image Formation**
+4. **Image Formation** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
+   * Note) 3D rotation coversion: [3d_rotation_conversion.py](https://github.com/mint-lab/cv_tutorial/blob/master/3d_rotation_conversion.py.py) :wrench:
+   * Camera Projection Models
+     * Object localization: [object_localization.py](https://github.com/mint-lab/cv_tutorial/blob/master/object_localization.py) :bulb:
+     * Image formation: [image_formation.py](https://github.com/mint-lab/cv_tutorial/blob/master/image_formation.py) :bulb:
+     * Distortion visualization: [distortion_visualization.py](https://github.com/mint-lab/cv_tutorial/blob/master/distortion_visualization.py) :bulb:
+     * Distortion correction: [distortion_correction.py](https://github.com/mint-lab/cv_tutorial/blob/master/distortion_correction.py) :wrench:
+   * Applications
+     * Camera calibration with a chessboard: [camera_calibration.py](https://github.com/mint-lab/cv_tutorial/blob/master/camera_calibration.py) :wrench:
+     * Pose estimation with a chessboard: [pose_estimation_chessboard.py](https://github.com/mint-lab/cv_tutorial/blob/master/pose_estimation_chessboard.py) :wrench:
 
 5. **Image Features**
 

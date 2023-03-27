@@ -3,8 +3,8 @@ import cv2 as cv
 
 # The initial camera configuration
 img_w, img_h = (640, 480)
-K = np.array([[1000, 0, 320],
-              [0, 1000, 240],
+K = np.array([[800, 0, 320],
+              [0, 800, 240],
               [0, 0, 1.]])
 dist_coeff = np.array([-0.2, 0.1, 0, 0])
 grid_x, grid_y, grid_z = (-18, 19), (-15, 16), 20
@@ -37,7 +37,7 @@ while True:
 
     # Show all images and process key event
     merge = np.hstack((img_vector, img_grid))
-    info = f'Focal: {K[0, 0]:.0f}, k1: {dist_coeff[0]:.1f}, k2: {dist_coeff[1]:.1f}, p1: {dist_coeff[2]:.1f}, p2: {dist_coeff[3]:.1f}'
+    info = f'Focal: {K[0, 0]:.0f}, k1: {dist_coeff[0]:.2f}, k2: {dist_coeff[1]:.2f}, p1: {dist_coeff[2]:.2f}, p2: {dist_coeff[3]:.2f}'
     cv.putText(merge, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 0, 0))
     cv.imshow('Distortion Visualization: Vectors | Grids', merge)
     key = cv.waitKey()
@@ -50,20 +50,20 @@ while True:
         K[0,0] -= 100
         K[1,1] -= 100
     elif key == ord('+') or key == ord('='):
-        dist_coeff[0] += 0.1
+        dist_coeff[0] += 0.05
     elif key == ord('-') or key == ord('_'):
-        dist_coeff[0] -= 0.1
+        dist_coeff[0] -= 0.05
     elif key == ord(']') or key == ord('}'):
-        dist_coeff[1] += 0.1
+        dist_coeff[1] += 0.05
     elif key == ord('[') or key == ord('{'):
-        dist_coeff[1] -= 0.1
+        dist_coeff[1] -= 0.05
     elif key == ord('"') or key == ord("'"):
-        dist_coeff[2] += 0.1
+        dist_coeff[2] += 0.01
     elif key == ord(':') or key == ord(';'):
-        dist_coeff[2] -= 0.1
+        dist_coeff[2] -= 0.01
     elif key == ord('>') or key == ord('.'):
-        dist_coeff[3] += 0.1
+        dist_coeff[3] += 0.01
     elif key == ord('<') or key == ord(','):
-        dist_coeff[3] -= 0.1
+        dist_coeff[3] -= 0.01
 
 cv.destroyAllWindows()

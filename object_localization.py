@@ -23,7 +23,7 @@ if __name__ == '__main__':
     img_file = 'data/daejeon_station.png'
     f, cx, cy, L = 810.5, 480, 270, 3.31 # Unit: [px], [px], [px], [m]
     cam_ori = [-18.7, -8.2, 2.0]         # Unit: [deg]
-    grid_x, grid_z = (-2, 3), (5, 35)    # Unit: [m]
+    grid_x, grid_z = (-2, 3), (5, 36)    # Unit: [m]
 
     # Load an image
     img = cv.imread(img_file)
@@ -41,14 +41,14 @@ if __name__ == '__main__':
     R = Rc.T
     t = -Rc.T @ tc.T
 
-    # Draw X- and Y-grids on the ground
+    # Draw X- and Z-grids on the ground
     for x in range(*grid_x):
-        s, e = [x, 0, grid_z[0]], [x, 0, grid_z[1]]
+        s, e = [x, 0, grid_z[0]], [x, 0, grid_z[1] - 1]
         p = K @ (R @ s + t)
         q = K @ (R @ e + t)
         cv.line(img, (int(p[0] / p[2]), int(p[1] / p[2])), (int(q[0] / q[2]), int(q[1] / q[2])), (64, 128, 64), 1)
     for z in range(*grid_z):
-        s, e = [grid_x[0], 0, z], [grid_x[1], 0, z]
+        s, e = [grid_x[0], 0, z], [grid_x[1] - 1, 0, z]
         p = K @ (R @ s + t)
         q = K @ (R @ e + t)
         cv.line(img, (int(p[0] / p[2]), int(p[1] / p[2])), (int(q[0] / q[2]), int(q[1] / q[2])), (64, 128, 64), 1)
