@@ -3,7 +3,7 @@ import cv2 as cv
 from Sobel_edge import drawText
 
 # Read the given image as gray scale
-img = cv.imread('data/sudoku.png', cv.IMREAD_GRAYSCALE)
+img = cv.imread('../data/sudoku.png', cv.IMREAD_GRAYSCALE)
 assert img is not None, 'Cannot read the given image'
 img_threshold_type = cv.THRESH_BINARY_INV # Type: Detect pixels close to 'black' (inverse)
 

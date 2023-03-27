@@ -45,7 +45,7 @@ def rotate_forward(img, degree):
 
 if __name__ == '__main__':
     # Read the given image file
-    img = cv.imread('data/peppers.tif')
+    img = cv.imread('../data/peppers.tif')
     assert img is not None, 'Cannot read the given image'
 
     # Initialize a control parameter

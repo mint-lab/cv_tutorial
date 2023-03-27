@@ -1,6 +1,6 @@
 import cv2 as cv
 
-video_file = 'data/PETS09-S2L1-raw.webm'
+video_file = '../data/PETS09-S2L1-raw.webm'
 
 # Read the given video file
 video = cv.VideoCapture(video_file)

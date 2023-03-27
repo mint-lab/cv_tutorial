@@ -20,7 +20,7 @@ def mouse_event_handler(event, x, y, flags, param):
 
 if __name__ == '__main__':
     # The given image and its calibration data
-    img_file = 'data/daejeon_station.png'
+    img_file = '../data/daejeon_station.png'
     f, cx, cy, L = 810.5, 480, 270, 3.31 # Unit: [px], [px], [px], [m]
     cam_ori = [-18.7, -8.2, 2.0]         # Unit: [deg]
     grid_x, grid_z = (-2, 3), (5, 36)    # Unit: [m]

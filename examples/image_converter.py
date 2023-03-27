@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img_file = 'data/peppers.tif'
+img_file = '../data/peppers.tif'
 target_format = 'png'
 
 # Read the given image file

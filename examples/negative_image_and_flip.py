@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # Read the given image
-img = cv.imread('data/peppers.tif')
+img = cv.imread('../data/peppers.tif')
 assert img is not None, 'Cannot read the given image'
 
 # Get its negative image

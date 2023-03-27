@@ -59,7 +59,7 @@ def calib_camera_from_chessboard(images, board_pattern, board_cellsize, K=None, 
 
 
 if __name__ == '__main__':
-    input_file = 'data/chessboard.avi'
+    input_file = '../data/chessboard.avi'
     board_pattern = (10, 7)
     board_cellsize = 0.025
 

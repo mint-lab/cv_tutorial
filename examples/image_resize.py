@@ -19,7 +19,7 @@ def resize(img, scale):
 
 
 if __name__ == '__main__':
-    img_file = 'data/peppers.tif'
+    img_file = '../data/peppers.tif'
 
     # Read the given image file
     img = cv.imread(img_file)

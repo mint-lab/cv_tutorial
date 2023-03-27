@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 # Read the given video
-video = cv.VideoCapture('data/PETS09-S2L1-raw.webm')
+video = cv.VideoCapture('../data/PETS09-S2L1-raw.webm')
 assert video.isOpened(), 'Cannot read the given video'
 
 frame_total = int(video.get(cv.CAP_PROP_FRAME_COUNT))
@@ -31,7 +31,7 @@ if frame_total != frame_count:
 
 # Save and show the background image
 img_back = img_back.astype(np.uint8)
-cv.imwrite('data/PETS09-S2L1-raw_back.png', img_back)
+cv.imwrite('../data/PETS09-S2L1-raw_back.png', img_back)
 cv.imshow('Background Extraction', img_back)
 cv.waitKey()
 cv.destroyAllWindows()

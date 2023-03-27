@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 # Read the given video
-video = cv.VideoCapture('data/PETS09-S2L1-raw.webm')
+video = cv.VideoCapture('../data/PETS09-S2L1-raw.webm')
 assert video.isOpened(), 'Cannot read the given video'
 
 img_prev = None

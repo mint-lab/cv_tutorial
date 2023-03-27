@@ -1,10 +1,10 @@
 import cv2 as cv
 
-video_file = 'data/PETS09-S2L1-raw.webm'
+video_file = '../data/PETS09-S2L1-raw.webm'
 
 # Read the given video file
 # Note) Additional argument examples
-# - Image sequence: video_file = 'data/PETS09-S2L1-raw_%04d.png'
+# - Image sequence: video_file = '../data/PETS09-S2L1-raw_%04d.png'
 # - Camera        : video_file = 0 (Note: The camera index)
 video = cv.VideoCapture(video_file)
 assert video.isOpened(), 'Cannot read the given video, ' + video_file

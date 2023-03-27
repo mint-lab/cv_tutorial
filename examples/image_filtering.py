@@ -58,12 +58,12 @@ kernel_table = [
 ]
 
 img_list = [
-    'data/lena.tif',
-    'data/baboon.tif',
-    'data/peppers.tif',
-    'data/black_circle.png',
-    'data/salt_and_pepper.png',
-    'data/sudoku.png',
+    '../data/lena.tif',
+    '../data/baboon.tif',
+    '../data/peppers.tif',
+    '../data/black_circle.png',
+    '../data/salt_and_pepper.png',
+    '../data/sudoku.png',
 ]
 
 # Initialize control parameters

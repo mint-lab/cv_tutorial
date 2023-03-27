@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 # The given video and calibration data
-input_file = 'data/chessboard.avi'
+input_file = '../data/chessboard.avi'
 K = np.array([[432.7390364738057, 0, 476.0614994349778],
               [0, 431.2395555913084, 288.7602152621297],
               [0, 0, 1]])

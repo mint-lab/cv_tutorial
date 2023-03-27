@@ -1,6 +1,6 @@
 import cv2 as cv
 
-video_file = 'data/PETS09-S2L1-raw.webm'
+video_file = '../data/PETS09-S2L1-raw.webm'
 target_format = 'avi'
 target_fourcc = 'XVID' # Note) FourCC: https://learn.microsoft.com/en-us/windows/win32/medfound/video-fourccs
 

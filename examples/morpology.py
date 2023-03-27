@@ -22,7 +22,7 @@ kernel_tables = [
 ]
 
 # Read the given image as gray scale
-img = cv.imread('data/face.png', cv.IMREAD_GRAYSCALE)
+img = cv.imread('../data/face.png', cv.IMREAD_GRAYSCALE)
 assert img is not None, 'Cannot read the given image'
 
 # Initialize a control parameter
