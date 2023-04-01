@@ -64,7 +64,7 @@ if __name__ == '__main__':
     board_cellsize = 0.025
 
     img_select = select_img_from_video(input_file, board_pattern)
-    assert len(img_select) > 0, 'There is no captured images!'
+    assert len(img_select) > 0, 'There is no selected images!'
     rms, K, dist_coeff, rvecs, tvecs = calib_camera_from_chessboard(img_select, board_pattern, board_cellsize)
 
     # Print calibration results

@@ -10,8 +10,18 @@ This tutorial contains code examples briefly written in [Python](https://python.
 
 
 
-### Code Examples
+### Lecture Slides
+* [Section 1. Introduction](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
+* [Section 2. Image Editing: Learning OpenCV](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
+* [Section 3. Image Processing](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
+* [Section 4. Image Formation](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
+
+
+
+### Example Codes
 * **Section 1. Introduction** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
+   * Note) How to install prerequisite packages in Python: `pip install -r requirements.txt`
+
 * **Section 2. Image Editing: Learning OpenCV** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
    * OpenCV Image Representation
       * Image creation: [image_creation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_creation.py) :bulb:
@@ -22,7 +32,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * Video format converter: [video_converter.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_converter.py) :wrench:
       * Camera recorder
    * OpenCV Drawing Functions
-      * Shape drawing: [shape_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/shape_drawing.py) :wrench:
+      * Shape drawing: [shape_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/shape_drawing.py) :wrench:
    * OpenCV High-level GUI
       * (Handling keyboard events) Video file player with frame navigation: [video_player+navigation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_player%2Bnavigation.py) :wrench:
       * (Handling mouse events) Free drawing: [free_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/free_drawing.py) :wrench:
@@ -54,7 +64,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Application) Change detection (foreground extraction): [change_detection.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/change_detection.py) :wrench:
 
 * **Section 4. Image Formation** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
-   * Note) 3D rotation coversion: [3d_rotation_conversion.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/3d_rotation_conversion.py) :wrench:
+   * Note) 3D rotation conversion: [3d_rotation_conversion.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/3d_rotation_conversion.py) :wrench:
    * Camera Projection Models
      * Object localization: [object_localization.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/object_localization.py) :bulb:
      * Image formation: [image_formation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_formation.py) :bulb:
@@ -64,7 +74,8 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Camera calibration with a chessboard: [camera_calibration.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/camera_calibration.py) :wrench:
      * Pose estimation with a chessboard: [pose_estimation_chessboard.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_chessboard.py) :wrench:
 
-* **Image Features**
+* **Section 5. Color**
+* **Section 6. Visual Features**
 * **Image Geometry**
 * **Object Recognition**
 * **Object Tracking**
