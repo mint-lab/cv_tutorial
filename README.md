@@ -15,6 +15,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * [Section 2. Image Editing: Learning OpenCV](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
 * [Section 3. Image Processing](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
 * [Section 4. Image Formation](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
+* [Section 5. Color](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_color.pdf)
 
 
 
@@ -75,6 +76,9 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Pose estimation with a chessboard: [pose_estimation_chessboard.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_chessboard.py) :wrench:
 
 * **Section 5. Color**
+  * Color space conversion: [color_bgr2hsv.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/color_bgr2hsv.py) :wrench:
+  * Color histogram equalization: [histogram_equalization+color.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization+color.py) :bulb:
+
 * **Section 6. Visual Features**
 * **Image Geometry**
 * **Object Recognition**

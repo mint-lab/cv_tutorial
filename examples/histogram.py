@@ -34,6 +34,6 @@ if __name__ == '__main__':
     img_hist = conv_hist2img(hist)
     img_hist = cv.resize(img_hist, (len(img[0]), len(img_hist))) # Note) Be careful at (width, height)
     merge = np.vstack((img, img_hist))
-    cv.imshow('Histogram (Image | Histogram)', merge)
+    cv.imshow('Histogram: Image | Histogram', merge)
     cv.waitKey()
     cv.destroyAllWindows()
