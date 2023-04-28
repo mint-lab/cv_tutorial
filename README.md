@@ -86,16 +86,14 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * **Section 7. Visual Features** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_visual_features.pdf)
 * **Section 8. Object Recognition**
 * **Section 9. Object Tracking**
+
 * **Advanced Topics 1. How to Solve Equations** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/adv01_solving_equations.pdf)
    * Solving inhomogeneous linear equations
       * Affine transformation estimation: [affine_estimation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/affine_estimation.py) :bulb:
-
    * Solving homogeneous linear equations
       * Planar homography estimation: [homography_estimation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/homography_estimation.py) :bulb:
          * Note) Image warping: [image_warping.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_warping.py) :bulb:
-
       * Triangulation: [triangulation_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/triangulation_implement.py) :bulb:
-
    * Solving nonlinear equations
       * Camera pose estimation (PnP): [pose_estimation_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_implement.py) :bulb:
       * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/camera_calibration_implement.py) :bulb:
