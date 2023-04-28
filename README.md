@@ -16,13 +16,15 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * [Section 3. Image Processing](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
 * [Section 4. Image Formation](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
 * [Section 5. Color](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_color.pdf)
+* [Section 6. Image Geometry](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
+* [Section 7. Visual Features](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_visual_features.pdf)
+* [Advanced Topic 1. How to Solve Equations](https://github.com/mint-lab/cv_tutorial/blob/master/slides/adv01_solving_equations.pdf)
 
 
 
 ### Example Codes
 * **Section 1. Introduction** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
    * Note) How to install prerequisite packages in Python: `pip install -r requirements.txt`
-
 * **Section 2. Image Editing: Learning OpenCV** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
    * OpenCV Image Representation
       * Image creation: [image_creation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_creation.py) :bulb:
@@ -47,7 +49,6 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * (Image crop) Image file viewer with the zoom window: [image_viewer+zoom.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_viewer%2Bzoom.py) :bulb:
       * Image resize with backward value copy: [image_resize.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_resize.py) :bulb:
       * Image rotation with backward/forward value copy: [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_rotation.py) :bulb:
-
 * **Section 3. Image Processing** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
    * Intensity Transformation
      * Image histogram: [histogram.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram.py) :bulb:
@@ -63,7 +64,6 @@ This tutorial contains code examples briefly written in [Python](https://python.
    * Morphological Operations
      * Morphological operations with various operations and kernels: [morpology.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/morpology.py) :wrench:
      * Application) Change detection (foreground extraction): [change_detection.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/change_detection.py) :wrench:
-
 * **Section 4. Image Formation** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
    * Note) 3D rotation conversion: [3d_rotation_conversion.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/3d_rotation_conversion.py) :wrench:
    * Camera Projection Models
@@ -71,19 +71,35 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Image formation: [image_formation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_formation.py) :bulb:
      * Distortion visualization: [distortion_visualization.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/distortion_visualization.py) :bulb:
      * Distortion correction: [distortion_correction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/distortion_correction.py) :wrench:
-   * Applications
-     * Camera calibration with a chessboard: [camera_calibration.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/camera_calibration.py) :wrench:
-     * Pose estimation with a chessboard: [pose_estimation_chessboard.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_chessboard.py) :wrench:
-
-* **Section 5. Color**
+   * Camera calibration with a chessboard: [camera_calibration.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/camera_calibration.py) :wrench:
+   * Camera pose estimation with a chessboard: [pose_estimation_chessboard.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_chessboard.py) :wrench:
+* **Section 5. Color** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_color.pdf)
   * Color space conversion: [color_bgr2hsv.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/color_bgr2hsv.py) :wrench:
   * Color histogram equalization: [histogram_equalization+color.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization+color.py) :bulb:
+* **Section 6. Image Geometry** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
+   * Camera pose estimation with a book cover v1: [pose_estimation_book1.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_book1.py) :wrench:
+   * Perspective correction: [perspective_correction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/perspective_correction.py) :wrench:
+   * Image stitching: [image_stitching.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_stitching.py) :wrench:
+   * 2D video stabilization: [video_stabilization.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_stabilization.py) :wrench:
+   * Triangulation: [triangulation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/triangulation.py) :wrench:
 
-* **Section 6. Visual Features**
-* **Image Geometry**
-* **Object Recognition**
-* **Object Tracking**
-* **Advanced Topics**
+* **Section 7. Visual Features** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_visual_features.pdf)
+* **Section 8. Object Recognition**
+* **Section 9. Object Tracking**
+* **Advanced Topics 1. How to Solve Equations** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/adv01_solving_equations.pdf)
+   * Solving inhomogeneous linear equations
+      * Affine transformation estimation: [affine_estimation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/affine_estimation.py) :bulb:
+
+   * Solving homogeneous linear equations
+      * Planar homography estimation: [homography_estimation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/homography_estimation.py) :bulb:
+         * Note) Image warping: [image_warping.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_warping.py) :bulb:
+
+      * Triangulation: [triangulation_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/triangulation_implement.py) :bulb:
+
+   * Solving nonlinear equations
+      * Camera pose estimation (PnP): [pose_estimation_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/pose_estimation_implement.py) :bulb:
+      * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/camera_calibration_implement.py) :bulb:
+
 
 
 
