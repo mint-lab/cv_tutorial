@@ -50,7 +50,7 @@ while True:
 
     # Get the foreground image
     img_fore = np.zeros_like(img)
-    img_fore[img_mask == 255] = img[img_mask == 255]
+    img_fore[fg] = img[fg]
 
     # Show all images
     merge = np.vstack((np.hstack((img, img_back.astype(np.uint8))),

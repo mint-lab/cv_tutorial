@@ -33,7 +33,6 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * Image format converter: [image_converter.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_converter.py) :wrench:
       * Video file player: [video_player.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_player.py) :wrench:
       * Video format converter: [video_converter.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_converter.py) :wrench:
-      * Camera recorder
    * OpenCV Drawing Functions
       * Shape drawing: [shape_drawing.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/shape_drawing.py) :wrench:
    * OpenCV High-level GUI
@@ -45,7 +44,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
       * (Image addition) Alpha blending: [alpha_blending.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/alpha_blending.py) :bulb:
       * (Image addition) Background extraction: [background_extraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/background_extraction.py) :bulb:
       * (Image subtraction) Image difference: [image_difference.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_difference.py) :bulb:
-      * (Image subtraction) Background subtraction
+      * (Image subtraction) Background subtraction: [background_subtraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/background_subtraction.py) :bulb:
       * (Image crop) Image file viewer with the zoom window: [image_viewer+zoom.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_viewer%2Bzoom.py) :bulb:
       * Image resize with backward value copy: [image_resize.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_resize.py) :bulb:
       * Image rotation with backward/forward value copy: [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_rotation.py) :bulb:
@@ -82,11 +81,9 @@ This tutorial contains code examples briefly written in [Python](https://python.
    * Image stitching: [image_stitching.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_stitching.py) :wrench:
    * 2D video stabilization: [video_stabilization.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/video_stabilization.py) :wrench:
    * Triangulation: [triangulation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/triangulation.py) :wrench:
-
 * **Section 7. Visual Features** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_visual_features.pdf)
 * **Section 8. Object Recognition**
 * **Section 9. Object Tracking**
-
 * **Advanced Topics 1. How to Solve Equations** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/adv01_solving_equations.pdf)
    * Solving inhomogeneous linear equations
       * Affine transformation estimation: [affine_estimation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/affine_estimation.py) :bulb:
