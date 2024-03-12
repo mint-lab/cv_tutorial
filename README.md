@@ -5,8 +5,8 @@ _Computer Vision Tutorial_ includes classical theories and techniques and also r
 This tutorial has been initiated and maintained to teach undergraduate CSE students in [SEOULTECH](https://en.seoultech.ac.kr/) as the course of _Computer Vision_ (109079).
 
 This tutorial contains code examples briefly written in [Python](https://python.org/) with [OpenCV](https://opencv.org/) and [PyTorch](https://pytorch.org/).
-* :bulb: Some of codes will help readers to understand inside of algorithms (e.g. how it works).
-* :wrench: The others of codes will provide usages and applications of OpenCV functions (e.g. how to use it).
+* :bulb: Some of codes will help readers to understand **inside** of algorithms (e.g. how it works).
+* :wrench: The others of codes will provide **usages and applications** of OpenCV functions (e.g. how to use it).
 
 
 
@@ -62,7 +62,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
      * Bilateral filter: [bilateral_filter.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/bilateral_filter.py) :wrench:
    * Morphological Operations
      * Morphological operations with various operations and kernels: [morpology.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/morpology.py) :wrench:
-     * Application) Change detection (foreground extraction): [change_detection.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/change_detection.py) :wrench:
+     * Application) Background subtraction (foreground extraction): [background_subtraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/background_subtraction.py) :wrench:
 * **Section 4. Image Formation** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_image_formation.pdf)
    * Note) 3D rotation conversion: [3d_rotation_conversion.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/3d_rotation_conversion.py) :wrench:
    * Camera Projection Models
