@@ -5,8 +5,9 @@ _Computer Vision Tutorial_ includes classical theories and techniques and also r
 This tutorial has been initiated and maintained to teach undergraduate CSE students in [SEOULTECH](https://en.seoultech.ac.kr/) as the course of _Computer Vision_ (109079).
 
 This tutorial contains code examples briefly written in [Python](https://python.org/) with [OpenCV](https://opencv.org/) and [PyTorch](https://pytorch.org/).
-* :bulb: Some of codes will help readers to understand **inside** of algorithms (e.g. how it works).
-* :wrench: The others of codes will provide **usages and applications** of OpenCV functions (e.g. how to use it).
+* :bulb: Some of code examples will help readers to understand **inside** of algorithms (e.g. how it works).
+* :wrench: Some of code examples will provide **usages and applications** of OpenCV functions (e.g. how to use it).
+* :camera: Some of code examples came from my 3D Computer Vision Tutorial, [3dv_tutorial](https://github.com/mint-lab/3dv_tutorial).
 
 
 
@@ -18,7 +19,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * [Section 5. Image Formation](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_image_formation.pdf)
 * [Section 6. Image Geometry](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
 * [Section 7. Solving Problems](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_solving_problems.pdf)
-* [Section 8. Visual Features](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_visual_features.pdf)
+* [Section 8. Image Correspondence](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
 * Section 9. Image Classification: CNN Backbones
 * Section 10. Object Detection
 * Section 11. Object Tracking
@@ -27,10 +28,10 @@ This tutorial contains code examples briefly written in [Python](https://python.
 
 
 ### Example Codes
-* **Section 1. Introduction** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
+* **Section 1. Introduction** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/01_introduction.pdf)
   * Note) How to install prerequisite packages in Python: `pip install -r requirements.txt`
 
-* **Section 2. Image Editing: Learning OpenCV** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
+* **Section 2. Image Editing: Learning OpenCV** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/02_image_editing.pdf)
   * OpenCV Image Representation
     * Image creation: [image_creation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_creation.py) :bulb:
   * OpenCV Image and Video Input/Output
@@ -54,7 +55,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
     * Image resize with backward value copy: [image_resize.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_resize.py) :bulb:
     * Image rotation with backward/forward value copy: [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_rotation.py) :bulb:
 
-* **Section 3. Image Processing** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
+* **Section 3. Image Processing** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/03_image_processing.pdf)
   * Intensity Transformation
     * Image histogram: [histogram.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram.py) :bulb:
     * Contrast stretching with min-max stretching: [contrast_stretching.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/contrast_stretching.py) :bulb:
@@ -71,46 +72,46 @@ This tutorial contains code examples briefly written in [Python](https://python.
     * Morphological operations with various operations and kernels: [morpology.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/morpology.py) :wrench:
     * Application) Background subtraction (foreground extraction): [background_subtraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/background_subtraction.py) :wrench:
 
-* **Section 4. Color** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_color.pdf)
+* **Section 4. Color** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_color.pdf)
   * Color space conversion: [color_bgr2hsv.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/color_bgr2hsv.py) :wrench:
   * Color histogram equalization: [histogram_equalization+color.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization+color.py) :bulb:
 
-* **Section 5. Image Formation** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_image_formation.pdf)
+* **Section 5. Image Formation** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/05_image_formation.pdf)
   * Getting Started with 2D
-    * 3D rotation conversion [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/3d_rotation_conversion.py)
+    * 3D rotation conversion: [3d_rotation_conversion.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/3d_rotation_conversion.py) :camera:
   * Pinhole Camera Model
-    * Object localization [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/object_localization.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/object_localization.cpp)
-    * Image formation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_formation.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_formation.cpp)
+    * Object localization: [object_localization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/object_localization.py) :camera:
+    * Image formation: [image_formation.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_formation.py) :camera:
   * Geometric Distortion Models
-    * Geometric distortion visualization [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_visualization.py)
-    * Geometric distortion correction [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_correction.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_correction.cpp) [[result video]](https://youtu.be/HKetupWh4V8)
+    * Geometric distortion visualization: [distortion_visualization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_visualization.py) :camera:
+    * Geometric distortion correction: [distortion_correction.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_correction.py) :camera: [[result video]](https://youtu.be/HKetupWh4V8)
   * Camera Calibration
-    * Camera calibration [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration.cpp)
+    * Camera calibration: [camera_calibration.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration.py) :camera:
   * Absolute Camera Pose Estimation (a.k.a. perspective-n-point; PnP)
-    * Pose estimation (chessboard) [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_chessboard.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_chessboard.cpp) [[result video]](https://youtu.be/4nA1OQGL-ig)
-    * Pose estimation (book) [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book1.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book1.cpp)
-    * Pose estimation (book) with camera calibration [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book2.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book2.cpp)
-    * Pose estimation (book) with camera calibration without initial $K$ [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book3.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book3.cpp) [[result video]](https://youtu.be/GYp4h0yyB3Y)
+    * Pose estimation (chessboard): [pose_estimation_chessboard.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_chessboard.py) :camera: [[result video]](https://youtu.be/4nA1OQGL-ig)
+    * Pose estimation (book): [pose_estimation_book1.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book1.py) :camera:
+    * Pose estimation (book) with camera calibration: [pose_estimation_book2.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book2.py) :camera:
+    * Pose estimation (book) with camera calibration without initial $K$: [pose_estimation_book3.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_book3.py) :camera: [[result video]](https://youtu.be/GYp4h0yyB3Y)
 
-* **Section 6. Image Geometry** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
+* **Section 6. Image Geometry** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
   * Planar Homography
-    * Perspective distortion correction [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/perspective_correction.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/perspective_correction.cpp)
-    * Planar image stitching [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching.cpp)
-    * 2D video stabilization [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/video_stabilization.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/video_stabilization.cpp) [[result video]](https://youtu.be/be_dzYicEzI)
+    * Perspective distortion correction: [perspective_correction.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/perspective_correction.py) :camera:
+    * Planar image stitching: [image_stitching.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching.py) :camera:
+    * 2D video stabilization: [video_stabilization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/video_stabilization.py) :camera: [[result video]](https://youtu.be/be_dzYicEzI)
   * Triangulation
-    * Triangulation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation.cpp)
+    * Triangulation: [triangulation.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation.py) :camera:
 
-* **Section 7. Solving Problems** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_solving_problems.pdf)
+* **Section 7. Solving Problems** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_solving_problems.pdf)
   * Solving Linear Equations in 3D Vision
-    * Affine transformation estimation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/affine_estimation_implement.py)
-    * Planar homography estimation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/homography_estimation_implement.py)
-      * Appendix) Image warping using homography [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_warping_implement.py)
-    * Triangulation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation_implement.py)
+    * Affine transformation estimation: [affine_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/affine_estimation_implement.py) :camera:
+    * Planar homography estimation: [homography_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/homography_estimation_implement.py) :camera:
+      * Appendix) Image warping using homography: [image_warping_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_warping_implement.py) :camera:
+    * Triangulation: [triangulation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation_implement.py) :camera:
   * Solving Nonlinear Equations in 3D Vision
-    * Absolute camera pose estimation [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_implement.py)
-    * Camera calibration [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement.py)
+    * Absolute camera pose estimation: [pose_estimation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_implement.py) :camera:
+    * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement.py) :camera:
 
-* **Section 8. Visual Features** [(Slides)](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_visual_features.pdf)
+* **Section 8. Image Correspondence** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
   * Feature Points and Descriptors
     * Harris corner
     * Feature point comparison
@@ -118,7 +119,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
     * Feature matching comparison
     * Feature tracking with KLT tracker
   * Outlier Rejection
-    * Line fitting with RANSAC [[python]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_m_estimator.py) [[cpp]](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_m_estimator.cpp)
+    * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera:
     * Planar homography estimation with RANSAC
 
 * **Section 9. Image Classification: CNN Backbones**
