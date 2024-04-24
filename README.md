@@ -81,7 +81,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
     * 3D rotation conversion: [3d_rotation_conversion.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/3d_rotation_conversion.py) :camera:
   * Pinhole Camera Model
     * Object localization: [object_localization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/object_localization.py) :camera:
-    * Image formation: [image_formation.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_formation.py) :camera:
+    * Image formation: [image_formation.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_formation.py) :camera::bulb: 
   * Geometric Distortion Models
     * Geometric distortion visualization: [distortion_visualization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_visualization.py) :camera:
     * Geometric distortion correction: [distortion_correction.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/distortion_correction.py) :camera: [[result video]](https://youtu.be/HKetupWh4V8)
@@ -103,24 +103,24 @@ This tutorial contains code examples briefly written in [Python](https://python.
 
 * **Section 7. Solving Problems** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_solving_problems.pdf)
   * Solving Linear Equations in 3D Vision
-    * Affine transformation estimation: [affine_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/affine_estimation_implement.py) :camera:
-    * Planar homography estimation: [homography_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/homography_estimation_implement.py) :camera:
-      * Appendix) Image warping using homography: [image_warping_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_warping_implement.py) :camera:
-    * Triangulation: [triangulation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation_implement.py) :camera:
+    * Affine transformation estimation: [affine_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/affine_estimation_implement.py) :camera: :bulb:
+    * Planar homography estimation: [homography_estimation_implement](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/homography_estimation_implement.py) :camera: :bulb:
+      * Appendix) Image warping using homography: [image_warping_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_warping_implement.py) :camera: :bulb:
+    * Triangulation: [triangulation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/triangulation_implement.py) :camera: :bulb:
   * Solving Nonlinear Equations in 3D Vision
-    * Absolute camera pose estimation: [pose_estimation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_implement.py) :camera:
-    * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement.py) :camera:
+    * Absolute camera pose estimation: [pose_estimation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_implement.py) :camera: :bulb:
+    * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement.py) :camera: :bulb:
 
 * **Section 8. Image Correspondence** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
   * Feature Points and Descriptors
-    * Harris corner
-    * Feature point comparison
+    * Harris corner: [harris_corner_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/harris_corner_implement.py) :camera: :bulb:
+    * SuperPoint [[Github]](https://github.com/magicleap/SuperPointPretrainedNetwork)
   * Feature Matching and Tracking
-    * Feature matching comparison
-    * Feature tracking with KLT tracker
+    * Feature matching comparison: [feature_matching.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/feature_matching.py) :camera:
+    * Feature tracking with KLT tracker: [feature_tracking_klt.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/feature_tracking_klt.py) :camera:
   * Outlier Rejection
-    * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera:
-    * Planar homography estimation with RANSAC
+    * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera: :bulb:
+    * Planar homography estimation with RANSAC: [image_stitching_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching_implement.py) :camera: :bulb:
 
 * **Section 9. Image Classification: CNN Backbones**
 * **Section 10. Object Detection**

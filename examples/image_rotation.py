@@ -12,7 +12,7 @@ def rotate(img, degree):
     cx = (w - 1) / 2
     cy = (h - 1) / 2
 
-    # Copy each pixel from the given image
+    # Copy each pixel from the given image (backward mapping)
     for ry in range(h):
         for rx in range(w):
             dx, dy = R @ [rx - cx, ry - cy]
@@ -32,7 +32,7 @@ def rotate_forward(img, degree):
     cx = (w - 1) / 2
     cy = (h - 1) / 2
 
-    # Copy each pixel from the given image
+    # Copy each pixel from the given image (forward mapping)
     for x in range(h):
         for y in range(w):
             dx, dy = R @ [x - cx, y - cy]
