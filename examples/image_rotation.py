@@ -33,8 +33,8 @@ def rotate_forward(img, degree):
     cy = (h - 1) / 2
 
     # Copy each pixel from the given image (forward mapping)
-    for x in range(h):
-        for y in range(w):
+    for y in range(h):
+        for x in range(w):
             dx, dy = R @ [x - cx, y - cy]
             rx, ry = int(dx + cx + 0.5), int(dy + cy + 0.5) # The nearest pixel
             if rx >= 0 and ry >= 0 and rx < w and ry < h:
