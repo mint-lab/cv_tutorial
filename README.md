@@ -136,6 +136,7 @@ This tutorial contains code examples briefly written in [Python](https://python.
 ### Acknowledgements
 The authors thank the following contributors and projects.
 
+* Youngjin Hong: He reported two bugs in [image_rotation.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_rotation.py) and [object_localization.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/object_localization.py).
 * [ImageProcessingPlace.com](https://www.imageprocessingplace.com/root_files_V3/image_databases.htm) for test images (`lena.tif`, `baboon.tif`, and `peppers.tif`)
 * [MOTChallenge](https://motchallenge.net/vis/PETS09-S2L1) for test images (`PETS09-S2L1-raw.webm`)
 * [Wikipedia](https://en.wikipedia.org/wiki/Salt-and-pepper_noise) for a test image (`salt_and_pepper.png`)
