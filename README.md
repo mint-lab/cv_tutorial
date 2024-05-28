@@ -22,14 +22,12 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * [Section 8. Image Correspondence](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
 * Section 9. Image Classification: CNN Backbones
   * Acknowledgement) Many slides about CNNs are adopted from [Stanford CS231n](https://cs231n.stanford.edu/).
-
 * Section 10. Image Segmentation
 * Section 11. Object Detection
-* Section 12. Toward Vision Foundation Models
+* Section 12. Vision Foundation Models
 * Section 13. Object Tracking
 * [Section 14. 3D Vision](https://github.com/mint-lab/cv_tutorial/blob/master/slides/14_3d_vision.pdf)
   * Acknowledgement) Many slides about NeRF are adopted from [NeRF Tutorial](https://sites.google.com/berkeley.edu/nerf-tutorial/) (ECCV 2022).
-
 
 
 
@@ -136,7 +134,6 @@ This tutorial contains code examples briefly written in [Python](https://python.
 * **Section 14. 3D Vision** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/14_3d_vision.pdf)
   * Structure-from-Motion
     * COLMAP [[Homepage]](https://demuc.de/colmap/) [[Documentation]](https://colmap.github.io/) [[Github]](https://github.com/colmap/colmap)
-
   * 3D Representations
     * NeRF [[Homepage]](https://www.matthewtancik.com/nerf) [[Github]](https://github.com/bmild/nerf)
 
