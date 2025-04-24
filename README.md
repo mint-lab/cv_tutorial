@@ -121,11 +121,12 @@ This tutorial contains code examples briefly written in [Python](https://python.
     * SuperPoint [[Github]](https://github.com/magicleap/SuperPointPretrainedNetwork)
   * Feature Matching and Tracking
     * Feature matching comparison: [feature_matching.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/feature_matching.py) :camera:
+    * SuperGlue [[Github]](https://github.com/magicleap/SuperGluePretrainedNetwork)
     * Feature tracking with KLT tracker: [feature_tracking_klt.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/feature_tracking_klt.py) :camera:
   * Outlier Rejection
     * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera: :bulb:
     * Planar homography estimation with RANSAC: [image_stitching_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching_implement.py) :camera: :bulb:
-
+  
 * **Section 9. Image Classification: CNN Backbones**
 * **Section 10. Image Segmentation**
 * **Section 11. Object Detection**
