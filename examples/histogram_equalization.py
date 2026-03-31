@@ -8,7 +8,7 @@ assert img is not None, 'Cannot read the given image'
 # Apply histogram equalization
 img_tran = cv.equalizeHist(img)
 
-# Derieve the histogram
+# Derive the histogram
 bin_width = 4 # Note) The value should be the power of 2.
 bin_num = int(256 / bin_width)
 hist = cv.calcHist([img], [0], None, [bin_num], [0, 255])

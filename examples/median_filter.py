@@ -27,7 +27,7 @@ while True:
     cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 255, thickness=2)
     cv.putText(result, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, 0)
     merge = np.hstack((img, result))
-    cv.imshow('Medial Filter: Original | Result', merge)
+    cv.imshow('Median Filter: Original | Result', merge)
 
     # Process the key event
     key = cv.waitKey()

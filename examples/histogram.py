@@ -12,6 +12,8 @@ def get_histogram(gray_img): # Alternative) cv.calcHist()
 def conv_hist2img(hist):
     img = np.full((256, 256), 255, dtype=np.uint8)
     max_freq = max(hist)
+    if max_freq == 0:
+        return img
     for val in range(len(hist)):
         normalized_freq = int(hist[val] / max_freq * 255)
         img[0:normalized_freq, val] = 0 # Mark as black

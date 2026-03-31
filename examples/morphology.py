@@ -14,8 +14,8 @@ morph_operations = [
 ]
 
 kernel_tables = [
-    {'name': '3x3 Box',   'kenerl': np.ones((3, 3), dtype=np.uint8)},
-    {'name': '5x5 Box',   'kenerl': np.ones((5, 5), dtype=np.uint8)},
+    {'name': '3x3 Box',   'kernel': np.ones((3, 3), dtype=np.uint8)},
+    {'name': '5x5 Box',   'kernel': np.ones((5, 5), dtype=np.uint8)},
     {'name': '5x1 Bar',   'kernel': np.ones((5, 1), dtype=np.uint8)},
     {'name': '1x5 Bar',   'kernel': np.ones((1, 5), dtype=np.uint8)},
     {'name': '5x5 Cross', 'kernel': np.array([[0,0,1,0,0], [0,0,1,0,0], [1,1,1,1,1], [0,0,1,0,0], [0,0,1,0,0]], dtype=np.uint8)},
