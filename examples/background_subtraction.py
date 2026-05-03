@@ -1,8 +1,12 @@
 import numpy as np
 import cv2 as cv
 
+# Initialize control parameters
+video_file = '../data/PETS09-S2L1-raw.webm'
+back_file = '../data/PETS09-S2L1-raw_back.png'
+
 # Read the given video
-video = cv.VideoCapture('../data/PETS09-S2L1-raw.webm')
+video = cv.VideoCapture(video_file)
 assert video.isOpened(), 'Cannot read the given video'
 
 # Initialize control parameters
@@ -14,7 +18,7 @@ fg_update_rate = 0.001
 zoom_level = 0.8
 
 # Read the background image
-img_back = cv.imread('../data/PETS09-S2L1-raw_back.png')
+img_back = cv.imread(back_file)
 assert img_back is not None, 'Cannot read the initial background image'
 img_back = cv.GaussianBlur(img_back, blur_ksize, blur_sigma).astype(np.float64)
 

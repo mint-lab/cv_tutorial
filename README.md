@@ -7,7 +7,7 @@ This tutorial has been initiated and maintained to teach undergraduate CSE stude
 This tutorial contains concise code examples written in [Python](https://python.org/) with [OpenCV](https://opencv.org/) and [PyTorch](https://pytorch.org/).
 * :bulb: Some code examples help readers understand how algorithms work internally.
 * :wrench: Some code examples demonstrate how to use OpenCV functions in practical applications.
-* :camera: Some code examples are from my **3D Vision Tutorial**, [3dv_tutorial](https://github.com/mint-lab/3dv_tutorial).
+* :camera: Some code examples are from my 3D Vision Tutorial ([3dv_tutorial](https://github.com/mint-lab/3dv_tutorial)).
 
 
 
@@ -20,14 +20,12 @@ This tutorial contains concise code examples written in [Python](https://python.
 * [Section 6. Image Geometry](https://github.com/mint-lab/cv_tutorial/blob/master/slides/06_image_geometry.pdf)
 * [Section 7. Solving Problems](https://github.com/mint-lab/cv_tutorial/blob/master/slides/07_solving_problems.pdf)
 * [Section 8. Image Correspondence](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
-* Section 9. Image Classification: CNN Backbones
-  * Acknowledgement) Many slides about CNNs are adopted from [Stanford CS231n](https://cs231n.stanford.edu/).
+* [Section 9. Image Classification: CNN Backbones and Transfer Learning](https://github.com/mint-lab/cv_tutorial/blob/master/slides/09_image_classification.pdf)
 * Section 10. Image Segmentation
 * Section 11. Object Detection
 * Section 12. Vision Foundation Models
 * Section 13. Object Tracking
 * [Section 14. 3D Vision](https://github.com/mint-lab/cv_tutorial/blob/master/slides/14_3d_vision.pdf)
-  * Acknowledgement) Many slides about NeRF are adopted from [NeRF Tutorial](https://sites.google.com/berkeley.edu/nerf-tutorial/) (ECCV 2022).
 
 
 
@@ -128,7 +126,14 @@ This tutorial contains concise code examples written in [Python](https://python.
     * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera: :bulb:
     * Planar homography estimation with RANSAC: [image_stitching_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching_implement.py) :camera: :bulb:
 
-* **Section 9. Image Classification: CNN Backbones**
+* **Section 9. Image Classification: CNN Backbones and Transfer Learning** [slides](https://github.com/mint-lab/cv_tutorial/blob/master/slides/09_image_classification.pdf)
+  * CNN Backbones
+    * AlexNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/alexnet.py)
+    * VGGNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/vgg.py)
+    * GoogLeNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/googlenet.py)
+    * ResNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py)
+  * Image classification with the pretrained ResNet-34 model: [image_classification.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_classification.py)
+
 * **Section 10. Image Segmentation**
 * **Section 11. Object Detection**
 * **Section 12. Vision Foundation Models**
@@ -138,7 +143,6 @@ This tutorial contains concise code examples written in [Python](https://python.
     * COLMAP [[Homepage]](https://demuc.de/colmap/) [[Documentation]](https://colmap.github.io/) [[Github]](https://github.com/colmap/colmap)
   * 3D Representations
     * NeRF [[Homepage]](https://www.matthewtancik.com/nerf) [[Github]](https://github.com/bmild/nerf)
-
 
 
 
