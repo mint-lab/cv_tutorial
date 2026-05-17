@@ -23,7 +23,7 @@ This tutorial contains concise code examples written in [Python](https://python.
 * [Section 9. Image Classification: CNN Backbones and Transfer Learning](https://github.com/mint-lab/cv_tutorial/blob/master/slides/09_image_classification.pdf)
 * Section 10. Image Segmentation
 * Section 11. Object Detection
-* Section 12. Vision Foundation Models
+* Section 12. Toward Vision Foundation Models
 * Section 13. Object Tracking
 * [Section 14. 3D Vision](https://github.com/mint-lab/cv_tutorial/blob/master/slides/14_3d_vision.pdf)
 
@@ -62,6 +62,7 @@ This tutorial contains concise code examples written in [Python](https://python.
     * Image histogram: [histogram.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram.py) :bulb:
     * Contrast stretching with min-max stretching: [contrast_stretching.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/contrast_stretching.py) :bulb:
     * Histogram equalization: [histogram_equalization.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization.py) :wrench:
+    * Histogram equalization (from scratch): [histogram_equalization_implement.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization_implement.py) :bulb:
   * Image Segmentation
     * Thresholding: [thresholding.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/thresholding.py) :wrench:
   * Image Filtering
@@ -73,7 +74,7 @@ This tutorial contains concise code examples written in [Python](https://python.
   * Morphological Operations
     * Morphological operations with various operations and kernels: [morphology.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/morphology.py) :wrench:
     * Application) Background subtraction (foreground extraction): [background_subtraction.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/background_subtraction.py) :wrench:
-
+  
 * **Section 4. Color** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/04_color.pdf)
   * Color space conversion: [color_bgr2hsv.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/color_bgr2hsv.py) :wrench:
   * Color histogram equalization: [histogram_equalization+color.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/histogram_equalization+color.py) :bulb:
@@ -113,10 +114,11 @@ This tutorial contains concise code examples written in [Python](https://python.
   * Solving Nonlinear Equations in 3D Vision
     * Absolute camera pose estimation: [pose_estimation_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/pose_estimation_implement.py) :camera: :bulb:
     * Camera calibration: [camera_calibration_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement.py) :camera: :bulb:
-
+    * Camera calibration (with lens distortion): [camera_calibration_implement_k1.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/camera_calibration_implement_k1.py) :camera: :bulb:
+  
 * **Section 8. Image Correspondence** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/08_image_correspondence.pdf)
   * Feature Points and Descriptors
-    * Harris corner: [harris_corner_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/harris_corner_implement.py) :camera: :bulb:
+    * Harris corner (from scratch): [harris_corner_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/harris_corner_implement.py) :camera: :bulb:
     * SuperPoint [[Github]](https://github.com/magicleap/SuperPointPretrainedNetwork)
   * Feature Matching and Tracking
     * Feature matching comparison: [feature_matching.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/feature_matching.py) :camera:
@@ -126,17 +128,17 @@ This tutorial contains concise code examples written in [Python](https://python.
     * Line fitting with RANSAC: [line_fitting_ransac.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/line_fitting_ransac.py) :camera: :bulb:
     * Planar homography estimation with RANSAC: [image_stitching_implement.py](https://github.com/mint-lab/3dv_tutorial/blob/master/examples/image_stitching_implement.py) :camera: :bulb:
 
-* **Section 9. Image Classification: CNN Backbones and Transfer Learning** [slides](https://github.com/mint-lab/cv_tutorial/blob/master/slides/09_image_classification.pdf)
+* **Section 9. Image Classification: CNN Backbones and Transfer Learning** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/09_image_classification.pdf)
   * CNN Backbones
-    * AlexNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/alexnet.py)
-    * VGGNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/vgg.py)
-    * GoogLeNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/googlenet.py)
-    * ResNet implementation [[PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py)
+    * AlexNet implementation [[Github/PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/alexnet.py)
+    * VGGNet implementation [[Github/PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/vgg.py)
+    * GoogLeNet implementation [[Github/PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/googlenet.py)
+    * ResNet implementation [[Github/PyTorch]](https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py)
   * Image classification with the pretrained ResNet-34 model: [image_classification.py](https://github.com/mint-lab/cv_tutorial/blob/master/examples/image_classification.py)
 
 * **Section 10. Image Segmentation**
 * **Section 11. Object Detection**
-* **Section 12. Vision Foundation Models**
+* **Section 12. Toward Vision Foundation Models**
 * **Section 13. Object Tracking**
 * **Section 14. 3D Vision** [[slides]](https://github.com/mint-lab/cv_tutorial/blob/master/slides/14_3d_vision.pdf)
   * Structure-from-Motion
